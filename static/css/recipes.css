@@ -1,0 +1,26 @@
+#recipes_index{
+  margin-left: 95px;
+  margin-top: 50px;
+}
+
+#recipes_index ul {
+  list-style: none;
+}
+
+#recipes_index li {
+  height: 400px;
+  width: 700px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+#recipes_new {
+  display: table;
+  margin: 0 auto;
+}
+
+#recipes_index img {
+  max-width: 620px;
+  max-height: 320px
+}

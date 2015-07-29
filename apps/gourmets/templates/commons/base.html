@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  {% load staticfiles %}
+  <link rel="stylesheet" href="/static/flat-ui/css/vendor/bootstrap.min.css"></script>
+  <link rel="stylesheet" href="/static/flat-ui/css/flat-ui.min.css"></script>
+  <link rel="stylesheet" href="/static/css/common.css"></script>
+  <link rel="stylesheet" href="/static/css/recipes.css"></script>
+  <script type="text/javascript" src="/static/flat-ui/js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="/static/flat-ui/js/flat-ui.min.js"></script>
+  {% block stylesheet %}{% endblock %}
+  {% block javascript %}{% endblock %}
+  <title>{% block title %} 孤独的美食家 {% endblock %} </title>
+</head>
+<body>
+  {% include "commons/header.html" %}
+  <div id="main">
+    {% block main %}{% endblock %}
+  </div>
+</body>
+</html>

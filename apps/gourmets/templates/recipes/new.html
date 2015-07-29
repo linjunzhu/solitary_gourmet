@@ -1,0 +1,15 @@
+{% extends 'commons/base.html' %}
+<!-- 该方法无法继承于父模板 -->
+{% load form_extras %}
+{% block main %}
+<div id="recipes_new">
+  {{ form.errors }}
+  <form action="{% url 'recipes.create' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input name="title" type="text" value="{{ form.title.value|show }}"/>
+    <input type="file" name="avatar" />
+    <textarea name="content" type="text">{{ form.content.value|show }}</textarea>
+    <input type='submit' value="提交"/>
+  </form>
+</div>
+{% endblock %}

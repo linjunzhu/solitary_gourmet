@@ -1,0 +1,18 @@
+{% extends 'commons/base.html' %}
+{% load form_extras %}
+{% block main %}
+<div id='recipes_index'>
+  {% if recipes %}
+    <ul>
+      {% for recipe in recipes %}
+        <li>
+          <label>{{ recipe.title }}</label>
+          <img src="{{ recipe.avatar|show_url }}"/>
+          <span>{{ recipe.content }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+</div>
+{% endblock %}

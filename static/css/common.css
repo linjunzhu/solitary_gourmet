@@ -1,0 +1,50 @@
+body {
+  background-color: #F7F7F7;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  width: 1024px;
+  margin-top: 30px;
+}
+
+#header {
+  height: 70px;
+  background-color: white;
+  line-height: 70px;
+}
+
+#header .logo {
+  float: left;
+  font-size: 30px;
+  margin-left: 35px;
+  color: #F9897E;
+  font-family: STSong;
+  font-weight: lighter;
+}
+#header .post {
+  float: right;
+  margin-right: 75px;
+}
+
+#header .post a {
+  color: #F6A097;
+  border-radius: 2px;
+  padding: 10px;
+  border: 1px solid;
+}
+
+#header .post a:hover {
+  background-color: #F6A097;
+  color: white;
+}
+
+#header .user {
+  float: right;
+  margin-right: 60px;
+}
+
